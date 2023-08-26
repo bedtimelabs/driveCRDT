@@ -16,7 +16,7 @@ Drivechains, as proposed in BIP300 and BIP301, allow Bitcoin to be temporarily o
 
 #### Orderlesschain Integration with IPLD
 
-The original Orderlesschain, written in Go, is being transitioned to Rust to ensure compatibility with other components like IPVM. This Rust-based Orderlesschain will be built directly into the IPLD, benefiting from the decentralized data structure's inherent scalability and flexibility.
+The original Orderlesschain, written in Go, should betransitioned to Rust to ensure compatibility with other components like IPVM. This Rust-based Orderlesschain will be built directly into the IPLD, benefiting from the decentralized data structure's inherent scalability and flexibility.
 
 #### CRDTs in DriveCRDT
 
