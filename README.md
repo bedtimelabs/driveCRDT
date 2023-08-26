@@ -2,7 +2,7 @@
 driveCRDT is a proposed BIP300 Drivechain utilizing Conflict-Free Repilicated Data Type smart contracts
 
 
-## DriveCRDT: A Comprehensive Technical Overview
+## DriveCRDT: Overview
 
 ### Abstract
 
