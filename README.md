@@ -1,45 +1,57 @@
-# driveCRDT
-driveCRDT is a proposed BIP300 Drivechain utilizing Conflict-Free Repilicated Data Type smart contracts
+# DriveCRDT Development Documentation
 
+## Introduction
+DriveCRDT is a project focused on constructing a Bitcoin-native internet, integrating decentralized storage nd compute capabilities. By leveraging the unique properties of Conflict-free Replicated Data Types (CRDTs), the project seeks to ensure data consistency across a decentralized network. This documentation offers a comprehensive understanding of the project's components and their interplay.
 
-## DriveCRDT: Overview
+## Table of Contents
+- [Vision & Objective](#vision--objective)
+- [Core Components & Technologies](#core-components--technologies)
+- [Data & Compute Architecture](#data--compute-architecture)
+- [User Experience & AI Enhancements](#user-experience--ai-enhancements)
+- [Reference Links](#reference-links)
 
-### Abstract
+### Vision & Objective
+Building a Bitcoin-native internet that seamlessly integrates storage, compute, and execution capabilities, aiming to onboard billions of users and ensuring a decentralized, robust, and efficient digital ecosystem.
 
-DriveCRDT is an ambitious project designed to integrate Bitcoin payments directly into the IPLD decentralized internet using the principles of BIP300 and BIP301 drivechains. Instead of leveraging the RSK sidechain, DriveCRDT employs the capabilities of Orderlesschain. However, a significant shift involves rewriting Orderlesschain from Go to Rust, aiming for seamless integration with other Rust-based components like IPVM. The project aspires to combine the security and immutability of the Bitcoin blockchain with the flexibility and scalability of the IPLD, all while ensuring compatibility with existing and future IPLD-based systems.
+### Core Components & Technologies
+#### Bitcoin Drivechain with CRDTs
+- **Description:** CRDTs are data structures that allow multiple replicas to be updated independently and concurrently without coordination. Integrating CRDTs with Bitcoin's drivechain eenables Bitcoin users to benefit from greater functionality allowing for more cohesive industry adoption and use case exploration with expressive asset programmability. 
+- **Reference:** [Learn more about CRDTs](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
 
-### Core Components
+#### Orderlesschain and IPLD Integration
+- **Description:** Orderlesschain is a decentralized ledger system designed to ensure data consistency and integrity. The potential integration with the InterPlanetary Linked Data (IPLD) can further enhance data interoperability. Given the project's early stages, there's a possibility to port Orderless components to Rust for enhanced interoperability.
+- **Reference:** [Orderlesschain](https://github.com/orderless-chain)
 
-#### Bitcoin Drivechain
+#### Orderlessfile
+- **Description:** Orderlessfile is a decentralized storage module designed for efficient data storage and retrieval. It focuses on ensuring that data remains consistent, available, and partition-tolerant.
+- **Reference:** [Orderless: A Decentralized File System](https://arxiv.org/pdf/2210.01477.pdf)
 
-Drivechains, as proposed in BIP300 and BIP301, allow Bitcoin to be temporarily offloaded to alternative, non-native blockchains called "sidechains". DriveCRDT uses this mechanism to offload Bitcoin to the Orderlesschain, which is integrated with the IPLD.
+### Data & Compute Architecture
+#### IPVM, WNFS, IROH
+- **Description:** These Rust-based modules collectively offer a comprehensive solution for decentralized computation, distributed file systems, and efficient data storage and retrieval.
+- **References:** [IPVM Working Group](https://github.com/ipvm-wg), [WNFS Working Group](https://github.com/wnfs-wg/), [IROH](https://github.com/n0-computer/iroh)
 
-#### Orderlesschain Integration with IPLD
+#### UCANs
+- **Description:** UCANs, or User-Controlled Authorization Networks, are a decentralized authorization protocol.
+- **Reference:** [UCAN Working Group](https://github.com/ucan-wg)
 
-The original Orderlesschain, written in Go, should betransitioned to Rust to ensure compatibility with other components like IPVM. This Rust-based Orderlesschain will be built directly into the IPLD, benefiting from the decentralized data structure's inherent scalability and flexibility.
+#### TauByte & Bacalhau
+- **Description:** Both are Go-native modules. TauByte focuses on efficient data processing, while Bacalhau emphasizes decentralized data integrity.
+- **References:** [TauByte](https://github.com/taubyte), [Bacalhau Project](https://github.com/bacalhau-project)
 
-#### CRDTs in DriveCRDT
+### User Experience & AI Enhancements
+#### NNS Integration
+- **Description:** The Name Name System (NNS) simplifies transactions by allowing users to send payments to their claimed Decentralized Identifier (DID).
+- **Reference:** [NNS Discussion](https://talk.fission.codes/t/nns-the-name-name-system/3684)
 
-Conflict-free Replicated Data Types (CRDTs) are data structures that allow multiple replicas to be updated independently. In DriveCRDT, these CRDTs will manage state in the Orderlesschain, ensuring consistency without a global transaction order.
+#### Petals AI
+- **Description:** Petals AI is an advanced AI system that offers insights, predictions, and data-driven recommendations.
+- **Reference:** [BigScience Workshop: Petals](https://github.com/bigscience-workshop/petals)
 
-### Additional Integrations
-
-#### WebNative File System (WNFS)
-
-DriveCRDT may also integrate WNFS, a decentralized file system that allows users to control their data and share it across applications and devices. It uses IPFS for data storage and IPLD for data structuring.
-
-#### InterPlanetary Virtual Machine (IPVM)
-
-With IPVM written in Rust, its integration with DriveCRDT becomes more feasible. IPVM allows for the execution of WebAssembly (Wasm) code in a distributed manner, using IPLD for data structuring.
-
-#### Name Name System (NNS)
-
-NNS, a decentralized naming system, could be integrated to provide intuitive naming conventions and address resolutions, enhancing user experience.
-
-### Development and Future Plans
-
-The initial phase involves rewriting Orderlesschain in Rust. This transition not only ensures compatibility with IPVM but also sets the stage for future integrations. Once the Rust-based Orderlesschain is stable, the team will explore integrating other components like WNFS, IPVM, and NNS. The ultimate goal is to create a robust, scalable, and user-friendly platform that brings Bitcoin's security to the decentralized web.
-
-### Conclusion
-
-DriveCRDT, with its innovative approach and commitment to leveraging the best of both Bitcoin and the IPLD, stands as a testament to the future of decentralized applications and services. By rewriting core components in Rust and planning for extensive integrations, DriveCRDT is poised to be a significant player in the decentralized web landscape. Like its sibling, IPsatoshi, DriveCRDT welcomes contributions and collaborations to realize its vision.
+### Reference Links
+In addition to the links provided throughout this overview, I have listed some considerable projects and inspiration below:
+- [On the Future of Decentralized Computing](https://research.protocol.ai/publications/on-the-future-of-decentralized-computing/vukolic2021.pdf)
+- [Vegvisir: A Partition-Tolerant Blockchain for the Internet-of-Things](https://vegvisir.cs.cornell.edu/html/files/papers/vegvisir-paper.pdf)
+- [FabricCRDT: A CRDT Approach to Permissioned Blockchains](https://www.researchgate.net/publication/337455334_FabricCRDT_A_Conflict-Free_Replicated_Datatypes_Approach_to_Permissioned_Blockchains)
+- [Merkle-CRDTs](https://research.protocol.ai/blog/2019/a-new-lab-for-resilient-networks-research/PL-TechRep-merkleCRDT-v0.1-Dec30.pdf)
+- [Lilypad Network Whitepaper](https://docs.lilypadnetwork.org/research-and-vision/whitepaper)
