@@ -11,7 +11,7 @@ DriveCRDT is a project focused on constructing a Bitcoin-native internet scaling
 - [Reference Links](#reference-links)
 
 ### Vision & Objective
-Building a Bitcoin-native internet that seamlessly integrates storage, compute, and execution capabilities, aiming to onboard billions of users and ensuring a decentralized, robust, and efficient digital ecosystem.
+Building a Bitcoin-native internet that integrates decentralized storage and comput-over-data capabilities, aiming to onboard billions of users and ensuring a decentralized, robust, and efficient digital ecosystem.
 
 ### Core Components & Technologies
 
@@ -20,15 +20,15 @@ Building a Bitcoin-native internet that seamlessly integrates storage, compute, 
 - **Reference:** [Learn more about CRDTs](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
 
 #### AT2 Integration (Potential Route)
-- **Description:** AT2 is an Asynchronous Trustworthy Transfers protocol that offers a decentralized approach to asset transfers without the need for global consensus. Its integration can provide enhanced security and efficiency in transactions.
+- **Description:** AT2 is an Asynchronous Trustworthy Transfers protocol that offers a decentralized approach to asset transfers without the need for global consensus. Its integration can provide enhanced security and efficiency in transactions. Possibilities for both permissioned and open networks.
 - **Reference:** [Learn more about AT2](https://arxiv.org/abs/2002.07763)
 
 #### Vegvisir (Potential Route)
-- **Description:** Vegvisir is a CRDT-based distributed ledger technology that ensures data consistency in decentralized systems, even in the presence of network partitions. It offers a robust framework for building decentralized applications.
+- **Description:** Vegvisir is a CRDT-based distributed ledger technology that ensures data consistency in decentralized systems, even in the presence of network partitions. It offers a robust framework for building decentralized applications. Permissioned
 - **Reference:** [Vegvisir: A Partition-Tolerant Blockchain for the Internet-of-Things](https://www.researchgate.net/publication/334448816_Vegvisir_A_Partition-Tolerant_Blockchain_for_the_Internet-of-Things)
 
 #### Orderlesschain and IPLD Integration (Potential Route)
-- **Description:** Orderlesschain is a decentralized ledger system designed to ensure data consistency and integrity. The potential integration with the InterPlanetary Linked Data (IPLD) can further enhance data interoperability. Given the project's early stages, there's a possibility to port Orderless components to Rust for enhanced interoperability.
+- **Description:** Orderlesschain is a decentralized ledger system designed to ensure data consistency and integrity. The potential integration with the InterPlanetary Linked Data (IPLD) can further enhance data interoperability. Given the project's early stages, there's a possibility to port Orderless components to Rust for enhanced interoperability. Permissioned
 - **Reference:** [Orderlesschain](https://github.com/orderless-chain)
   - ##### Orderlessfile
     - **Description:** Orderlessfile is a decentralized storage module designed for efficient data storage and retrieval. It focuses on ensuring that data remains consistent, available, and partition-tolerant.
@@ -61,5 +61,12 @@ Building a Bitcoin-native internet that seamlessly integrates storage, compute, 
 In addition to the links provided throughout this overview, I have listed some considerable projects and inspiration below:
 - [On the Future of Decentralized Computing](https://research.protocol.ai/publications/on-the-future-of-decentralized-computing/vukolic2021.pdf)
 - [FabricCRDT: A CRDT Approach to Permissioned Blockchains](https://www.researchgate.net/publication/337455334_FabricCRDT_A_Conflict-Free_Replicated_Datatypes_Approach_to_Permissioned_Blockchains)
-- [Merkle-CRDTs](https://research.protocol.ai/blog/2019/a-new-lab-for-resilient-networks-research/PL-TechRep-merkleCRDT-v0.1-Dec30.pdf)
+- [Merkle-CRDTs](https://research.protocol.ai/blog/2019/a-new-lab-for-resilient-networks-research/PL-TechRep-merkleCRDT-v0.1-Dec30.pdf) | [go-ds-crdt on GitHub](https://github.com/ipfs/go-ds-crdt)
 - [Lilypad Network Whitepaper](https://docs.lilypadnetwork.org/research-and-vision/whitepaper)
+
+### Additional References
+- [rust-crdt on GitHub](https://github.com/rust-crdt/rust-crdt/tree/master)
+- [bft-crdts on GitHub](https://github.com/davidrusu/bft-crdts)
+- [maidsafe/brb on GitHub](https://github.com/maidsafe/brb/)
+- [maidsafe/brb_dt_at2 on GitHub](https://github.com/maidsafe/brb_dt_at2)
+- [hashseq on GitHub](https://github.com/davidrusu/hashseq/tree/master)
