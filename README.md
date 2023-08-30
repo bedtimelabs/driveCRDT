@@ -1,7 +1,7 @@
 # DriveCRDT Development Documentation
 
 ## Introduction
-DriveCRDT is a project focused on constructing a Bitcoin-native internet scaling layer, integrating decentralized storage and compute-over-data capabilities in addition to expressive smart contracts. By leveraging the unique properties of Conflict-free Replicated Data Types (CRDTs), the project seeks to ensure data consistency across a decentralized network. This documentation offers a comprehensive understanding of the project's components and their interplay.
+DriveCRDT is a project focused on constructing a Bitcoin-native internet scaling layer, integrating decentralized storage and compute-over-data capabilities with the Bitcoin network. By leveraging the unique properties of Conflict-free Replicated Data Types (CRDTs), the project seeks to ensure data consistency across a decentralized network. This documentation offers a comprehensive understanding of the project's components and their interplay.
 
 ## Table of Contents
 - [Vision & Objective](#vision--objective)
