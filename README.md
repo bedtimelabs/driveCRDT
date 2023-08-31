@@ -70,3 +70,4 @@ In addition to the links provided throughout this overview, I have listed some c
 - [maidsafe/brb on GitHub](https://github.com/maidsafe/brb/)
 - [maidsafe/brb_dt_at2 on GitHub](https://github.com/maidsafe/brb_dt_at2)
 - [hashseq on GitHub](https://github.com/davidrusu/hashseq/tree/master)
+- [ConvEx CRDT blockchain implmentation](https://github.com/Convex-Dev/design/blob/main/papers/convex-whitepaper.md)
