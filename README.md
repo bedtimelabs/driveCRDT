@@ -17,7 +17,7 @@ Building a Bitcoin-native internet that integrates decentralized storage and com
 
 #### Bitcoin Drivechain with CRDTs
 - **Description:** CRDTs are data structures that allow multiple replicas to be updated independently and concurrently without coordination. Integrating CRDTs with Bitcoin's drivechain enables Bitcoin users to benefit from greater functionality, allowing for more cohesive industry adoption and use case exploration with expressive asset programmability. 
-- **Reference:** [Learn more about CRDTs](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
+- **Reference:** [Learn more about CRDTs](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type), [Making CRDTs Byzantine Fault Tolerant](https://martin.kleppmann.com/papers/bft-crdt-papoc22.pdf)
 
 #### AT2 Integration (Potential Route)
 - **Description:** AT2 is an Asynchronous Trustworthy Transfers protocol that offers a decentralized approach to asset transfers without the need for global consensus. Its integration can provide enhanced security and efficiency in transactions. Possibilities for both permissioned and open networks.
