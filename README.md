@@ -34,7 +34,10 @@ Building a Bitcoin-native internet that integrates decentralized storage and com
     - **Description:** Orderlessfile is a decentralized storage module designed for efficient data storage and retrieval. It focuses on ensuring that data remains consistent, available, and partition-tolerant.
     - **Reference:** [Orderless: A Decentralized File System](https://arxiv.org/pdf/2210.01477.pdf)
 
-**see PASTRO and BeaForT references below for other potential dev routes**
+
+
+**see PASTRO and BeauForT references below for additional potential dev routes**
+
 
 ### Data & Compute Architecture
 #### IPVM, WNFS, IROH
