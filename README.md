@@ -76,6 +76,6 @@ In addition to the links provided throughout this overview, I have listed some c
 - [hashseq on GitHub](https://github.com/davidrusu/hashseq/tree/master)
 - [ConvEx CRDT blockchain implmentation](https://github.com/Convex-Dev/design/blob/main/papers/convex-whitepaper.md)
 - [PASTRO-Permissionless Asynchronous Asset Transfer](https://arxiv.org/pdf/2105.04966.pdf) 
-- [BeaForT local first BFT + CRDT scaling](https://heydari.be/papers/tpds23_beaufort.pdf)
+- [BeauForT local first BFT + CRDT scaling](https://heydari.be/papers/tpds23_beaufort.pdf)
 
 
