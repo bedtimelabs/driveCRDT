@@ -34,6 +34,7 @@ Building a Bitcoin-native internet that integrates decentralized storage and com
     - **Description:** Orderlessfile is a decentralized storage module designed for efficient data storage and retrieval. It focuses on ensuring that data remains consistent, available, and partition-tolerant.
     - **Reference:** [Orderless: A Decentralized File System](https://arxiv.org/pdf/2210.01477.pdf)
 
+**see PASTRO and BeaForT references below for other potential dev routes**
 
 ### Data & Compute Architecture
 #### IPVM, WNFS, IROH
@@ -71,3 +72,7 @@ In addition to the links provided throughout this overview, I have listed some c
 - [maidsafe/brb_dt_at2 on GitHub](https://github.com/maidsafe/brb_dt_at2)
 - [hashseq on GitHub](https://github.com/davidrusu/hashseq/tree/master)
 - [ConvEx CRDT blockchain implmentation](https://github.com/Convex-Dev/design/blob/main/papers/convex-whitepaper.md)
+- [PASTRO-Permissionless Asynchronous Asset Transfer](https://arxiv.org/pdf/2105.04966.pdf) 
+- [BeaForT local first BFT + CRDT scaling](https://heydari.be/papers/tpds23_beaufort.pdf)
+
+
