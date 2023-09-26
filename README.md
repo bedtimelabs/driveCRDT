@@ -21,7 +21,7 @@ Building a Bitcoin-native internet that integrates decentralized storage and com
 
 #### AT2 Integration (Potential Route)
 - **Description:** AT2 is an Asynchronous Trustworthy Transfers protocol that offers a decentralized approach to asset transfers without the need for global consensus. Its integration can provide enhanced security and efficiency in transactions. Possibilities for both permissioned and open networks.
-- **Reference:** [Learn more about AT2](https://arxiv.org/abs/2002.07763)
+- **Reference:** [Learn more about AT2](https://arxiv.org/pdf/1812.10844.pdf)
 
 #### Vegvisir (Potential Route)
 - **Description:** Vegvisir is a CRDT-based distributed ledger technology that ensures data consistency in decentralized systems, even in the presence of network partitions. It offers a robust framework for building decentralized applications. Permissioned
